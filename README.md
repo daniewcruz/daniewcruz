@@ -1,4 +1,4 @@
-# Olá, eu sou Daniel Cruz! 👋
+<h1 align="center">Olá 👋, sou Daniel Cruz</h1>
 
 🌱 Atualmente estou aprimorando minhas habilidades em **JavaScript**.
 
