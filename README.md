@@ -3,7 +3,7 @@
 
 - 💬 Pergunte-me sobre **javascript**
 
-- 📫 Como entrar em contato comigo ** daniewcruz@gmail.com**
+- 📫 Como entrar em contato comigo **daniewcruz@gmail.com**
 
 <h3 align="left">Conecte-se comigo:</h3>
 <p align="left">
