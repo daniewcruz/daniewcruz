@@ -1,6 +1,6 @@
 <h1>Olá 👋, sou Daniel Cruz</h1>
 
-🌱 dedicado a aprender e crescer nas tecnologias web, com foco especial em **JavaScript**, **HTML**, e **CSS**.
+🌱 Dedicado a aprender e crescer nas tecnologias web, com foco especial em **JavaScript**, **HTML**, e **CSS**.
 
 💬 Pergunte-me sobre **JavaScript** ou assuntos relacionadas ao desenvolvimento web.
 
