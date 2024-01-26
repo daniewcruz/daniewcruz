@@ -1,8 +1,8 @@
 <h1>Olá 👋, sou Daniel Cruz</h1>
 
-🌱 Atualmente estou aprimorando minhas habilidades em **JavaScript**.
+🌱 dedicado a aprender e crescer nas tecnologias web, com foco especial em **JavaScript**, **HTML**, e **CSS**.
 
-💬 Pergunte-me sobre **JavaScript** ou qualquer coisa relacionada ao desenvolvimento web.
+💬 Pergunte-me sobre **JavaScript** ou assuntos relacionadas ao desenvolvimento web.
 
 📫 Como entrar em contato comigo: [E-mail](mailto:daniewcruz@gmail.com)
 
