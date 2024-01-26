@@ -1,4 +1,4 @@
-<h1Olá 👋, sou Daniel Cruz</h1>
+<h1>Olá 👋, sou Daniel Cruz</h1>
 
 🌱 Atualmente estou aprimorando minhas habilidades em **JavaScript**.
 
