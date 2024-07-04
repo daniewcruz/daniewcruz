@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is Daniel Cruz, and I'm a front-end developer. I have a passion for creating intuitive, accessible, and responsive web interfaces. I'm always eager to learn and collaborate on exciting projects. Let's connect and build something amazing together!</h2>
+<h3 align="left">Hi 👋! My name is Daniel Cruz, and I'm a front-end developer. I have a passion for creating intuitive, accessible, and responsive web interfaces. I'm always eager to learn and collaborate on exciting projects. Let's connect and build something amazing together!</h3>
 
 ###
 
@@ -34,8 +34,12 @@
 ###
 
 <div align="left">
-  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
-  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
+  <a href="daniewcruz@gmail.com" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
+  </a>
+  <a href="www.linkedin.com/in/daniewcruz" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
+  </a>
 </div>
 
 ###
