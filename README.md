@@ -1,4 +1,4 @@
-<h3 align="left">Hi 👋! My name is Daniel Cruz, and I'm a front-end developer. I have a passion for creating intuitive, accessible, and responsive web interfaces. I'm always eager to learn and collaborate on exciting projects. Let's connect and build something amazing together!</h3>
+<h3 align="left">Olá 👋! Meu nome é Daniel Cruz e sou desenvolvedor front-end. Tenho paixão por criar interfaces web intuitivas, acessíveis e responsivas. Estou sempre a disposição para aprender e colaborar em projetos interessantes. Vamos nos conectar e construir algo incrível juntos!</h3>
 
 ###
 
