@@ -1,0 +1,121 @@
+#hero{
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image img {
+    width: 75%; /* ou o tamanho desejado */
+    height: auto; /* ou ajuste o valor de altura */
+    object-fit: contain; /* Isso evita que a imagem seja cortada */
+    display: block;
+    margin: 0 auto;
+    
+}
+
+:root {
+    --primary: #4d74d4; /* Cor para a onda */
+  }
+  
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wave-separator {
+   
+    bottom: 0;
+    left: 0;
+    width: 110%;
+    height: 150px;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    transform-origin: bottom center;
+    z-index: 1;
+    background-color: var(--primary-accent);
+  }
+  
+  .wave-separator svg {
+   
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.1s ease-out; /* Suavizar o movimento */
+  }
+  
+  @media (max-width: 768px) {
+    .wave-separator {
+      height: 100px; /* Ajuste da altura para telas menores */
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+.buttons-wrapper {
+    margin-top: 30px;
+}
+
+
+
+.btn.primary {
+    background-color: var(--primary);
+    color: white;
+     
+}
+
+.btn:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: scale(1.05);
+}
+
+
+
+#hero .info-container{
+    display: grid;
+    grid-template-columns: auto 500px;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+#hero .info-container .column:nth-child(1){
+    padding-top: 70px;
+}
+
+#hero .heading-1,
+#hero .sub-title{
+    text-align: left;
+}
+
+#hero .wrapper .buttons-wrapper{
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+
+
+
+
+/* Responsive codigo */
+@media(max-width: 1050px){
+    #hero .info-container{
+        text-align: center;
+}
+
+#hero .info-container{
+    grid-template-columns: 100%;
+}
+
+#hero .info-container .buttons-wrapper{
+    justify-content: center;
+}
+}

@@ -1,0 +1,25 @@
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.logo .icon{
+    font-size: 35px;
+    color: var(--primary-accent);
+}
+
+.logo .logo-text{
+    font-size: 27px;
+    font-weight: 700;
+   
+    
+}
+
+.logo .logo-text:hover{
+    transition: var(--transition);
+   
+    text-shadow: 0px 0px 5px var(--primary-accent);
+
+
+}

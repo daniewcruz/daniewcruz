@@ -1,0 +1,35 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre os parágrafos */
+    max-width: 800px; /* Tamanho máximo do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px; /* Espaço interno */
+  }
+  
+  .sub-title {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: var(--primary); /* Cor personalizada para destacar */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
