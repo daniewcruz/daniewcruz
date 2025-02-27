@@ -2,7 +2,7 @@
 
 ### Olá! Eu sou o **Daniew Cruz**  
 
-💻 **Desenvolvedor Full Stack & Mobile** 🚀 | Meu foco é sempre alcançar os objetivos de forma eficiente, independente da linguagem ou tecnologia. Acredito que o sucesso vem de entender o problema e encontrar a solução ideal.
+💻 **Desenvolvedor Full Stack & Mobile** 🚀 
 
 🎯 Sempre em busca de novos desafios, aprendo constantemente para entregar as melhores soluções.
 
