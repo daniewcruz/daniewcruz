@@ -46,6 +46,3 @@
   </a>
 </div>  
 
----
-
-Esse modelo transmite uma imagem de alguém focado no resultado final, sem se prender a linguagens ou ferramentas, sempre buscando a melhor solução para cada projeto. O que acha? 😊
