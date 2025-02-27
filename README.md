@@ -2,11 +2,12 @@
 
 ### Olá! Eu sou o **Daniew Cruz**  
 
-💻 Desenvolvedor Full Stack & Mobile 🚀 | Meu foco é sempre alcançar os objetivos de forma eficiente, independente da linguagem ou tecnologia. Acredito que o sucesso vem de entender o problema e encontrar a solução ideal.
+💻 **Desenvolvedor Full Stack & Mobile** 🚀 | Meu foco é sempre alcançar os objetivos de forma eficiente, independente da linguagem ou tecnologia. Acredito que o sucesso vem de entender o problema e encontrar a solução ideal.
 
 🎯 Sempre em busca de novos desafios, aprendo constantemente para entregar as melhores soluções.
 
-🌟 Vamos trabalhar juntos? Estou aberto a colaborar e criar algo incrível!
+🌐 Vamos conversar? Estou sempre aberto a novos projetos e colaborações. Vamos construir algo incrível juntos!
+
 ---
 
 ### 🚀 Tecnologias que eu uso:
@@ -31,7 +32,13 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg" height="30" alt="GIMP" />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="Git" />
-</div>  
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="React" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="30" alt="SCSS" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/reactnative/reactnative-original.svg" height="30" alt="React Native" />
+</div>
 
 ---
 
