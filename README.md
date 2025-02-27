@@ -1,25 +1,15 @@
 
 
-### 🖐️ Olá! Eu sou o **Daniew Cruz**  
+### Olá! Eu sou o **Daniew Cruz**  
 
-🎯 **Desenvolvedor Front-end & Mobile** apaixonado por tecnologia, acessibilidade e experiências digitais intuitivas. Sempre buscando aprender e criar interfaces que fazem a diferença!  
+💻 Desenvolvedor Full Stack & Mobile 🚀 | Meu foco é sempre alcançar os objetivos de forma eficiente, independente da linguagem ou tecnologia. Acredito que o sucesso vem de entender o problema e encontrar a solução ideal.
 
-🚀 Atualmente, estou explorando novas tecnologias e aprimorando minhas habilidades para construir soluções cada vez melhores.  
+🎯 Sempre em busca de novos desafios, aprendo constantemente para entregar as melhores soluções.
 
-📩 **Aberto a colaborações!** Vamos trocar ideias e construir algo incrível juntos?  
-
+🌟 Vamos trabalhar juntos? Estou aberto a colaborar e criar algo incrível!
 ---
 
-### 📊 GitHub Stats  
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=daniewcruz&show_icons=true&include_all_commits=true&count_private=true&theme=dracula&hide_border=false" height="150" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=daniewcruz&layout=compact&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph" />
-</div>  
-
----
-
-### 🚀 Tecnologias e Ferramentas  
+### 🚀 Tecnologias que eu uso:
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="JavaScript" />
@@ -45,7 +35,7 @@
 
 ---
 
-### 📬 Entre em Contato  
+### 📬 Entre em Contato
 
 <div align="left">
   <a href="mailto:daniewcruz@gmail.com" target="_blank">
@@ -58,4 +48,4 @@
 
 ---
 
-O que acha dessa versão? Ela mantém seu estilo profissional, mas deixa a leitura mais fluida e envolvente. 😊🚀
+Esse modelo transmite uma imagem de alguém focado no resultado final, sem se prender a linguagens ou ferramentas, sempre buscando a melhor solução para cada projeto. O que acha? 😊
