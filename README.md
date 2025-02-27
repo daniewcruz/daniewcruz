@@ -1,12 +1,6 @@
-Seu README já está bem estruturado e visualmente agradável! Aqui estão algumas melhorias para deixá-lo ainda mais autêntico e impactante:  
 
-1. **Tom mais natural e envolvente** na apresentação.  
-2. **Melhoria no alinhamento do texto e links** para facilitar a leitura.  
-3. **Pequenos ajustes na formatação** para um visual mais profissional.  
 
----
-
-### 🖐️ Olá! Eu sou o **Daniel Cruz**  
+### 🖐️ Olá! Eu sou o **Daniew Cruz**  
 
 🎯 **Desenvolvedor Front-end & Mobile** apaixonado por tecnologia, acessibilidade e experiências digitais intuitivas. Sempre buscando aprender e criar interfaces que fazem a diferença!  
 
