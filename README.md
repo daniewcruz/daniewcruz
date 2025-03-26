@@ -2,11 +2,9 @@
 
 ### Olá! Eu sou o **Daniew Cruz**  
 
-💻 **Desenvolvedor Full Stack & Mobile** 🚀 
+💻 **Desenvolvedor Full Stack & Mobile**🎯
 
-🎯 Sempre em busca de novos desafios, aprendo constantemente para entregar as melhores soluções.
-
-🌐 Vamos conversar? Estou sempre aberto a novos projetos e colaborações. Vamos construir algo incrível juntos!
+🌐 Estou sempre aberto a novos projetos e colaborações. Vamos construir algo incrível juntos!
 
 ---
 
