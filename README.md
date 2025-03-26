@@ -1,10 +1,8 @@
-
-
 ### Olá! Eu sou o **Daniew Cruz**  
 
-💻 **Desenvolvedor Full Stack & Mobile** 🎯
+💻 **Desenvolvedor Full Stack & Mobile** 🎯  
 
-🌐 Estou sempre aberto a novos projetos e colaborações. Vamos construir algo incrível juntos!
+🌐 Estou sempre aberto a novos projetos e colaborações. Vamos construir algo incrível juntos!  
 
 ---
 
@@ -25,6 +23,8 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30" alt="Node.js" />
   <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="Python" />
+  <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="30" alt="Figma" />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg" height="30" alt="GIMP" />
@@ -35,7 +35,6 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="30" alt="SCSS" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="React Native" />
 </div>
 
 ---
@@ -50,4 +49,3 @@
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="LinkedIn"/>
   </a>
 </div>  
-
