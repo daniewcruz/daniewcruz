@@ -1,4 +1,4 @@
-### Olá! Eu sou o **Daniew Cruz**  
+### Olá! Eu sou o **Daniel Cruz**  
 
 🎯 **Desenvolvedor Full Stack & Mobile**  
 
