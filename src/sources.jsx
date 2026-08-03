@@ -68,7 +68,7 @@ export const services = [
 export const skills = [
   {
       title:"Design & Prototipagem",
-      data:[
+      items:[
           {
               skill:"Figma",
               level:"Experienced",
@@ -89,7 +89,7 @@ export const skills = [
   },
   {
       title:"Mobile & Frontend",
-      data:[
+      items:[
           {
               skill:"React Native",
               level:"Experienced",
@@ -122,7 +122,7 @@ export const skills = [
   },
   {
       title:"Backend & ODOO",
-      data:[
+      items:[
           {
               skill:"ODOO",
               level:"Experienced",
@@ -155,7 +155,7 @@ export const skills = [
   },
   {
       title:"Banco de Dados & DevOps",
-      data:[
+      items:[
           {
               skill:"PostgreSQL",
               level:"Experienced",

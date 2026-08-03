@@ -18,8 +18,8 @@ const Skill = () => {
                         <div className="skill-category" key={index}>
                             <h3 className="skill-category-title">{category.title}</h3>
                             <div className="skill-list">
-                                {category.data.map((item, i) => (
-                                    <div className="skill-item" key={i}>
+                                {category.items.map((item, itemIndex) => (
+                                    <div className="skill-item" key={itemIndex}>
                                         <div className="skill-item-header">
                                             <span>{item.skill}</span>
                                             <span className="muted">{item.level}</span>

@@ -24,8 +24,8 @@ const Projects = () => {
                                 <h3 className="project-title">{project.title}</h3>
                                 <p className="muted project-description">{project.description}</p>
                                 <div className="project-stack">
-                                    {project.stack.map((tech, i) => (
-                                        <div className="flex-center icon-wrapper" key={i} title={tech.name} style={{ color: tech.iconColor }}>
+                                    {project.stack.map((tech, techIndex) => (
+                                        <div className="flex-center icon-wrapper" key={techIndex} title={tech.name} style={{ color: tech.iconColor }}>
                                             {tech.icon}
                                         </div>
                                     ))}

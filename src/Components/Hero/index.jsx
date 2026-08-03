@@ -1,23 +1,18 @@
 import { useEffect } from "react";
 import "./Hero.css";
 import { Link } from "react-scroll";
-import me from "../../assets/dc.png";
+import profilePhoto from "../../assets/dc.png";
 
 const Hero = () => {
   useEffect(() => {
-    // Criar uma função para o scroll
+    // Efeito parallax: move a onda decorativa proporcionalmente ao scroll da página
     const handleScroll = () => {
       const waveSeparator = document.querySelector('.wave-separator svg');
-      let scrollPosition = window.scrollY;
-      
-      // Movimento da onda baseado na rolagem
-      waveSeparator.style.transform = `translateY(${scrollPosition * 0.1}px)`; // Controle da velocidade do movimento da onda
+      const scrollPosition = window.scrollY;
+      waveSeparator.style.transform = `translateY(${scrollPosition * 0.1}px)`;
     };
 
-    // Adicionar o evento de scroll
     window.addEventListener('scroll', handleScroll);
-    
-    // Remover o evento ao desmontar o componente
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -42,7 +37,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="column hero-image">
-          <img src={me} alt="hero-image" />
+          <img src={profilePhoto} alt="hero-image" />
         </div>
       </div>
      

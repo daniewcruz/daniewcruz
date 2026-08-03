@@ -10,14 +10,17 @@ import SocialHandles from "../../Commons/SocialHandles";
 const Navbar = () => {
     const [openSidebar, setOpenSidebar] = useState(false);
 
+    const toggleSidebar = () => setOpenSidebar((previousState) => !previousState);
+
     return (
         <nav className="navbar flex">
-            {openSidebar ? <div className="overlay"  onClick={() => setOpenSidebar(!openSidebar)} /> : ""}
+            {/* Fundo escurecido atrás do menu mobile; some quando o sidebar está fechado */}
+            {openSidebar ? <div className="overlay" onClick={toggleSidebar} /> : ""}
             <Logo/>
             <div className={`box flex-center tabs-group sidebar ${openSidebar ? "visible" : ""} `}>
-                <div 
+                <div
                 className="flex-center icon-wrapper cancel-btn"
-                onClick={() => setOpenSidebar(!openSidebar)}
+                onClick={toggleSidebar}
                 >
                     <FaTimes/>
                 </div>
@@ -48,7 +51,7 @@ const Navbar = () => {
                 Serviços
                 </Link>
             <div className="flex-center icon-wrapper menu-btn"
-            onClick={() => setOpenSidebar(!openSidebar)}
+            onClick={toggleSidebar}
             >
                 <HiMenu/>
             </div>

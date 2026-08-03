@@ -32,13 +32,13 @@ const Footer = () => {
                         <div className="footer-column" key={index}>
                             <h4 className="footer-column-title">{column.title}</h4>
                             <div className="footer-routes">
-                                {column.routes.map((route, i) =>
+                                {column.routes.map((route, routeIndex) =>
                                     route.id ? (
-                                        <Link to={route.id} smooth={true} spy={true} key={i} className="footer-route">
+                                        <Link to={route.id} smooth={true} spy={true} key={routeIndex} className="footer-route">
                                             {route.name}
                                         </Link>
                                     ) : (
-                                        <span className="footer-route muted" key={i}>
+                                        <span className="footer-route muted" key={routeIndex}>
                                             {route.name}
                                         </span>
                                     )

@@ -3,27 +3,28 @@ import { Particles } from "@tsparticles/react";
 const ParticlesBackground = () => {
     return (
         <div id="particles-background">
+            {/* Fundo decorativo: círculos flutuantes que se afastam do cursor ao passar o mouse */}
             <Particles
                 options={{
                     particles: {
                         number: {
-                            value: 100,  // Aumente o número de partículas para garantir visibilidade
+                            value: 100,
                         },
                         shape: {
                             type: "circle",
                         },
                         size: {
-                            value: 5,  // Ajuste o tamanho das partículas
+                            value: 5,
                         },
                         opacity: {
-                            value: 0.5, // Opacidade das partículas
+                            value: 0.5,
                         },
                     },
                     interactivity: {
                         events: {
                             onhover: {
                                 enable: true,
-                                mode: "repulse",  // Efeito de repulsão quando o mouse passa
+                                mode: "repulse",
                             },
                         },
                     },
