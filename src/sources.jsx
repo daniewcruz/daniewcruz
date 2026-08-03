@@ -11,12 +11,13 @@ import { RiExchange2Fill } from "react-icons/ri";
 import { FaInstagram, FaXTwitter, FaYoutube,FaLaptopCode, FaLinkedin, FaGithub, FaWhatsapp} from "react-icons/fa6";
 import { FaFacebookSquare,FaPaintBrush } from "react-icons/fa";
 import { TfiWrite } from 'react-icons/tfi'
-import {DiReact} from "react-icons/di";
+import {DiReact, DiPython} from "react-icons/di";
 import {FaNodeJs} from "react-icons/fa";
-import {SiExpress,SiMongodb} from "react-icons/si";
+import {SiExpress,SiMongodb, SiPostgresql, SiOdoo} from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiAdobexd } from "react-icons/si";
+import { BiLogoDocker } from "react-icons/bi";
 
 export const tabs = [
     {name:"Sobre",id:'about'},
@@ -28,91 +29,81 @@ export const tabs = [
 
 export const whyChooseMe = [
   {
-    title:"Unmatched Local Expertise",
+    title:"4 Sistemas em Produção",
     icon:<GrUserExpert/>,
     link:"",
   },
   {
-    title:"Comprehensive Market Analysise",
+    title:"Design + Desenvolvimento",
     icon:<IoMdAnalytics/>,
     link:"",
   },
   {
-    title:"Dedicated Client Support",
+    title:"Mobile Offline-First",
     icon:<MdOutlineSupportAgent/>,
     link:"",
   },
   {
-    title:"Innovative Marketing Strategies",
+    title:"Expertise ODOO & Fiscal",
     icon:<RiExchange2Fill/>,
     link:"",
   },
 ]
 export const services = [
   {
-    name:"UI/UX Design",
+    name:"Desenvolvimento Mobile Offline-First",
+    icon:<TbBrandReactNative/>,
+    description:`Aplicações React Native com operação sem internet. Sincronização automática com retry, histórico imutável e foco em dados críticos. Ideal para logística, gestão de estoque e operações em campo.`,
+  },
+  {
+    name:"Backend ODOO & Customização",
+    icon:<SiOdoo/>,
+    description:`Desenvolvimento de módulos, customizações e integrações ODOO. Modelagem de dados, regras de negócio em Python e painéis operacionais. Expertise em sistemas de governança fiscal e logística.`,
+  },
+  {
+    name:"Design UI/UX Completo",
     icon:<FaPaintBrush/>,
-    description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione 
-    voluptatum earum quam tempore, repellat aut vero ut eum, provident accusamus recusandae 
-    eligendi, adipisci sequi reiciendis quisquam? Sapiente optio rerum sequi!`,
+    description:`Design visual responsável em todos os projetos. Prototipagem em Figma, identidade visual, dashboards e interfaces de alta fidelidade. Do conceito à implementação com feeling para experiência.`,
   },
   {
-    name:"Web Development",
-    icon:<FaLaptopCode/>,
-    description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione 
-    voluptatum earum quam tempore, repellat aut vero ut eum, provident accusamus recusandae 
-    eligendi, adipisci sequi reiciendis quisquam? Sapiente optio rerum sequi!`,
+    name:"Automação Empresarial",
+    icon:<RiExchange2Fill/>,
+    description:`Orquestração de pipelines ETL com Airflow, RPA com Python, fluxos low-code em n8n e Zeev. Integrações de APIs REST e sincronização entre sistemas complexos.`,
   },
-  {
-    name:"Content Creation",
-    icon:<TfiWrite/>,
-    description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione 
-    voluptatum earum quam tempore, repellat aut vero ut eum, provident accusamus recusandae 
-    eligendi, adipisci sequi reiciendis quisquam? Sapiente optio rerum sequi!`,
-  },
-  
 ]
 
 
 export const skills = [
   {
-      title:"UI/UX",
+      title:"Design & Prototipagem",
       data:[
           {
               skill:"Figma",
               level:"Experienced",
           },
           {
-              skill:"Sketch",
-              level:"Intermediate",
+              skill:"UI/UX Design",
+              level:"Experienced",
           },
           {
-              skill:"XD",
+              skill:"Identidade Visual",
+              level:"Experienced",
+          },
+          {
+              skill:"Dashboards",
               level:"Intermediate",
           },
       ]
   },
   {
-      title:"Frontend Development",
+      title:"Mobile & Frontend",
       data:[
           {
-              skill:"HTML",
+              skill:"React Native",
               level:"Experienced",
           },
           {
-              skill:"CSS",
-              level:"Experienced",
-          },
-          {
-              skill:"JavaScript",
-              level:"Experienced",
-          },
-          {
-              skill:"Tailwind",
-              level:"Intermediate",
-          },
-          {
-              skill:"Bootstrap",
+              skill:"Expo",
               level:"Experienced",
           },
           {
@@ -120,32 +111,85 @@ export const skills = [
               level:"Experienced",
           },
           {
-              skill:"React Native",
+              skill:"TypeScript",
               level:"Experienced",
+          },
+          {
+              skill:"JavaScript",
+              level:"Experienced",
+          },
+          {
+              skill:"SQLite",
+              level:"Experienced",
+          },
+          {
+              skill:"Zustand",
+              level:"Intermediate",
           },
       ]
   },
   {
-      title:"Backend Development",
+      title:"Backend & ODOO",
       data:[
           {
-              skill:"Node JS",
-              level:"Experienced",
-          },
-          {
-              skill:"MangoDB",
-              level:"Intermediate",
-          },
-          {
-              skill:"PHP",
+              skill:"ODOO",
               level:"Experienced",
           },
           {
               skill:"Python",
+              level:"Experienced",
+          },
+          {
+              skill:"Node.js",
               level:"Intermediate",
           },
           {
-              skill:"MySQL",
+              skill:"Airflow",
+              level:"Intermediate",
+          },
+          {
+              skill:"RPA",
+              level:"Intermediate",
+          },
+          {
+              skill:"APIs REST",
+              level:"Experienced",
+          },
+          {
+              skill:"n8n",
+              level:"Intermediate",
+          },
+      ]
+  },
+  {
+      title:"Banco de Dados & DevOps",
+      data:[
+          {
+              skill:"PostgreSQL",
+              level:"Experienced",
+          },
+          {
+              skill:"SQLite",
+              level:"Experienced",
+          },
+          {
+              skill:"Docker",
+              level:"Intermediate",
+          },
+          {
+              skill:"Git",
+              level:"Experienced",
+          },
+          {
+              skill:"Firebase",
+              level:"Intermediate",
+          },
+          {
+              skill:"Scrum",
+              level:"Experienced",
+          },
+          {
+              skill:"Kanban",
               level:"Experienced",
           },
       ]
@@ -154,111 +198,38 @@ export const skills = [
 
 
 export const projects = [
-  { 
+  {
     id:1,
-    title: 'AI Powered School',
-    image: 'https://cdn.dribbble.com/userupload/10064191/file/original-091c06a630285b93a5f81e29e882fe3c.png',
-    category:"UI/UX",
-    description: `Transforming education with AI, our School UI Design project revolutionizes the 
-                     learning experience. Seamlessly integrating intelligent features, personalized interfaces, 
-                     and intuitive navigation, our design empowers educators and students alike. Experience 
-                     innovation at its finest as we pave the way for a smarter, more efficient educational 
-                     journey.`,
-    demoLink: "https://google.com/",
+    title: 'Conecta Aprendiz',
+    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
+    category:"Mobile",
+    description: `App de gamificação para aprendizes com usuários reais na Google Play Store. Responsável por design visual completo em Figma e implementação React Native. Foco em experiência interativa, engajamento e retenção de usuários através de desafios e rewards.`,
+    demoLink: "https://play.google.com/store/apps/details?id=com.alexdevmobile007.senacaprendizagem",
     stack:[
       {
-        name:"XD",
-        icon: <SiAdobexd/>,
+        name:"React Native",
+        icon: <TbBrandReactNative/>,
+        iconColor:"skyblue",
+      },
+      {
+        name:"Figma",
+        icon: <CgFigma/>,
+        iconColor:"orangered",
+      },
+      {
+        name:"Expo",
+        icon: <TbBrandReactNative/>,
         iconColor:"skyblue",
       },
     ]
   },
   {
     id:2,
-    title: 'E-Commerce Application',
-    image: 'https://cdn.dribbble.com/userupload/8002230/file/original-c8eec16edea4d5c836b2bfabe7fbaa5a.jpg',
-    category:"Web",
-    description:`Enhance your online shopping experience with our E-Commerce Application 
-      UI design project. Seamlessly blending aesthetics with functionality, our intuitive 
-      interface offers easy navigation, personalized recommendations, and secure 
-      transactions. Elevate your digital storefront and captivate customers with a visually 
-      stunning design tailored to your brand`,
-    demoLink: "https://google.com/",
-    stack:[
-      {
-        name:"ReactJs",
-        icon: <DiReact/>,
-        iconColor:"skyblue",
-      },
-      {
-        name:"NodeJs",
-        icon: <FaNodeJs/>,
-        iconColor:"green",
-      },
-      {
-        name:"ExpressJs",
-        icon: <SiExpress/>,
-      },
-      {
-        name:"MongoDB",
-        icon: <SiMongodb/>,
-        iconColor:"limegreen",
-      },
-    ]
-  },
-  {
-    id:3,
-    title: 'Robotic Engineering Web Application',
-    image: 'https://s3-alpha.figma.com/hub/file/5101537097/c4a1ed2c-4ab9-43fb-a248-d7ac6b0c3161-cover.png',
-    category:"Web",
-    description: `Unlock the future of robotics with our Robotic Engineering Web Application
-      project. Seamlessly integrating cutting-edge technology, data analytics, 
-      and collaborative tools, our platform empowers engineers to design, simulate, 
-      and optimize robotic systems. Experience innovation at its peak as we redefine the 
-      boundaries of robotic engineering.`,
-    demoLink: "https://google.com/",
-    stack:[
-      {
-        name:"ReactJs",
-        icon: <DiReact/>,
-        iconColor:"skyblue",
-      },
-      {
-        name:"NodeJs",
-        icon: <FaNodeJs/>,
-        iconColor:"green",
-      },
-      {
-        name:"ExpressJs",
-        icon: <SiExpress/>,
-      },
-      {
-        name:"MongoDB",
-        icon: <SiMongodb/>,
-        iconColor:"limegreen",
-      },
-      {
-        name:"MongoDBT",
-        icon: <SiMongodb/>,
-      },
-      {
-        name:"MongoDBT",
-        icon: <SiMongodb/>,
-      },
-      {
-        name:"MongoDBT",
-        icon: <SiMongodb/>,
-      },
-    ]
-  },
-  {
-    id:4,
-    title: 'Project Management application',
-    image: 'https://miro.medium.com/v2/resize:fit:1400/1*6iO0wm8q4cByvxY6kB9WiQ.png',
-    category:"Apps",
-    description: `Simplify project coordination with our intuitive Project Management application. Track tasks, collaborate in real-time, and streamline workflows effortlessly. With customizable features and robust reporting, stay organized and efficient.
-                     Elevate your project management experience and achieve success with ease.`,
-    demoLink: "https://google.com/",
+    title: 'Estoque+',
+    image: 'https://images.unsplash.com/photo-1553531088-a93c38a47b68?w=500&h=300&fit=crop',
+    category:"Mobile",
+    description:`App mobile logístico em produção com múltiplas lojas. Módulos offline-first para Recebimento, Conferência e Transferência. Sincronização automática com retry, histórico imutável e rastreamento completo. Integração com scanner de barcode, câmera para ocorrências e rotas.`,
+    demoLink: "https://github.com/daniewcruz",
     stack:[
       {
         name:"React Native",
@@ -266,67 +237,94 @@ export const projects = [
         iconColor:"skyblue",
       },
       {
-        name:"NodeJs",
-        icon: <FaNodeJs/>,
-        iconColor:"green",
+        name:"TypeScript",
+        icon: <DiReact/>,
+        iconColor:"blue",
       },
       {
-        name:"ExpressJs",
-        icon: <SiExpress/>,
-      },
-      {
-        name:"MongoDB",
+        name:"SQLite",
         icon: <SiMongodb/>,
-        iconColor:"limegreen",
+        iconColor:"gray",
+      },
+      {
+        name:"Figma",
+        icon: <CgFigma/>,
+        iconColor:"orangered",
+      },
+      {
+        name:"Odoo",
+        icon: <SiOdoo/>,
+        iconColor:"darkred",
       },
     ]
   },
   {
-    id:5,
-    title: 'Mobile bank - App Design',
-    image: 'https://i.pinimg.com/originals/a0/be/c3/a0bec3706210e6ab28470eee95bf5889.png',
-    category:"UI/UX",
-    description: `Experience banking at your fingertips with our sleek Mobile Bank app design. Seamlessly manage your finances on-the-go with intuitive navigation, secure transactions, and personalized insights. Enjoy a modern interface that prioritizes convenience and accessibility, revolutionizing your banking experience.`,
-    demoLink: "https://google.com/",
+    id:3,
+    title: 'LeadTime',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop',
+    category:"Web",
+    description: `Portal de logística em produção que otimiza processos de agendamento entre compradores e fornecedores. Responsável por design visual e desenvolvimento backend ODOO em equipe usando Scrum. Integrações com sistemas de logística e gestão de entregas.`,
+    demoLink: "https://github.com/daniewcruz",
     stack:[
       {
         name:"Figma",
         icon: <CgFigma/>,
         iconColor:"orangered",
       },
+      {
+        name:"Odoo",
+        icon: <SiOdoo/>,
+        iconColor:"darkred",
+      },
+      {
+        name:"Python",
+        icon: <DiPython/>,
+        iconColor:"blue",
+      },
+      {
+        name:"PostgreSQL",
+        icon: <SiPostgresql/>,
+        iconColor:"lightblue",
+      },
+      {
+        name:"Docker",
+        icon: <BiLogoDocker/>,
+        iconColor:"skyblue",
+      },
     ]
   },
   {
-    id:6,
-    title: 'Quiz App Development',
-    image: 'https://i.pinimg.com/originals/b3/35/02/b33502e465346ace2a7f1df203d851a3.jpg',
-    category:"Apps",
-    description: `Elevate engagement and knowledge retention with our Quiz App 
-                    Development project. Seamlessly crafted for interactive learning 
-                    experiences, our app offers customizable quizzes, real-time feedback, 
-                    and captivating visuals. Empower users to test their knowledge anytime,
-                     anywhere, fostering a dynamic learning environment tailored to their 
-                     needs.`,
-      demoLink: "https://google.com/",
+    id:4,
+    title: 'Nexped',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f70e504c0?w=500&h=300&fit=crop',
+    category:"Web",
+    description: `Sistema ODOO de pré-entrada de notas em produção. Especializado em governança fiscal com análise automática de críticas (fiscais, comerciais, pricing) e detecção de inconsistências. Dashboard operacional para aprovação de notas com rastreamento completo. Desenvolvimento solo com customizações avançadas.`,
+    demoLink: "https://github.com/daniewcruz",
     stack:[
       {
-        name:"React Native",
-        icon: <TbBrandReactNative/>,
-        iconColor:"skyblue",
+        name:"Odoo",
+        icon: <SiOdoo/>,
+        iconColor:"darkred",
       },
       {
-        name:"NodeJs",
-        icon: <FaNodeJs/>,
-        iconColor:"green",
+        name:"Python",
+        icon: <DiPython/>,
+        iconColor:"blue",
       },
       {
-        name:"ExpressJs",
-        icon: <SiExpress/>,
+        name:"PostgreSQL",
+        icon: <SiPostgresql/>,
+        iconColor:"lightblue",
       },
       {
-        name:"MongoDB",
-        icon: <SiMongodb/>,
-        iconColor:"limegreen",
+        name:"Figma",
+        icon: <CgFigma/>,
+        iconColor:"orangered",
+      },
+      {
+        name:"XML",
+        icon: <DiReact/>,
+        iconColor:"red",
       },
     ]
   },
@@ -378,17 +376,17 @@ export const clients = [
 export const contactOptions = [
   {
     title:"Email",
-    value:"mradinuba@gmail.com",
+    value:"daniewcruz@gmail.com",
     icon:<MdOutlineAlternateEmail />,
   },
   {
-    title:"Phone Number",
-    value:"+2348149121918",
+    title:"Telefone",
+    value:"+55 84 99455-3966",
     icon:<IoCallOutline/>,
   },
   {
-    title:"Address",
-    value:"Gwarinpa, Abuja, Nigeria",
+    title:"Localização",
+    value:"Natal, Rio Grande do Norte",
     icon:<IoLocationOutline/>,
   },
 ]
