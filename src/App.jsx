@@ -4,7 +4,6 @@ import About from "./Components/About"
 import Skill from "./Components/Skill"
 import Services from "./Components/Services"
 import Projects from "./Components/Projects"
-import Testimonials from "./Components/Testimonials"
 import Contact from "./Components/Contact"
 import Footer from "./Components/Footer"
 import ParticlesBackground from "./Components/ParticlesBackground"; // Importe o componente
@@ -20,7 +19,6 @@ function App() {
       <Skill/>
       <Services/>
       <Projects/>
-      <Testimonials/>
       <Contact/>
       <Footer/>
     </>

@@ -4,7 +4,7 @@ import { FaHtml5, FaCss3Alt, FaJsSquare, FaNodeJs, FaReact, FaPython } from 'rea
 import Cube3D from "../Cube3D/Cube3D";
 const About = () => {
     return (
-        <section className="about">
+        <section id="about" className="about">
             <div className="wrapper">
                 <div className="section-header">
                     <h1 className="heading-1">

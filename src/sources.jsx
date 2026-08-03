@@ -1,8 +1,3 @@
-import client1 from "./assets/client-1.jpeg";
-import client2 from "./assets/client-2.jpeg";
-import client3 from "./assets/client-3.jpeg";
-import client4 from "./assets/client-4.jpeg";
-import client5 from "./assets/client-5.jpeg";
 import { IoMdAnalytics} from "react-icons/io";
 import { IoCallOutline ,IoLocationOutline } from "react-icons/io5";
 import { GrUserExpert } from "react-icons/gr";
@@ -24,7 +19,7 @@ export const tabs = [
     {name:"Skills",id:'skill'},
     {name:"Serviços",id:'services'},
     {name:"Projetos",id:'projects'},
-    {name:"",id:'testimonials'},
+    {name:"Contato",id:'contact'},
 ]
 
 export const whyChooseMe = [
@@ -330,49 +325,6 @@ export const projects = [
   },
 ]
 
-export const clients = [
-  {
-    image:client1,
-    name:'Samuel Eze',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
-           exercitation ullamco laboris`
-  },
-  {
-    image:client2,
-    name:'Richael Linda',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  },
-  {
-    image:client3,
-    name:'Gloria Chiwendu',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
-           exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
-  },
-  {
-    image:client4,
-    name:'Precious Stone',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  },
-  {
-    image:client5,
-    name:'Ndubisi John',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  },
-
-];
-
 export const contactOptions = [
   {
     title:"Email",
@@ -416,26 +368,25 @@ export const socialHandles = [
 
 export const footer = [
   {
-    title:"Explore",
+    title:"Navegação",
     routes:[
-      {name:"About Me",id:'about'},
-      {name:"Skill",id:'skill'},
+      {name:"Sobre",id:'about'},
+      {name:"Skills",id:'skill'},
     ]
   },
   {
-      title:"Trusted",
+      title:"Trabalho",
       routes:[
-        {name:"Services",id:'services'},
-        {name:"Projects",id:'projects'},
-        {name:"Testimonials",id:'testimonials'},
+        {name:"Serviços",id:'services'},
+        {name:"Projetos",id:'projects'},
+        {name:"Contato",id:'contact'},
       ]
     },
   {
-      title:"Others",
+      title:"Contato",
       routes:[
-        {name:"Privacy Policy"},
-        {name:"Terms and Conditions"},
-        {name:"Cookie Policy"},
+        {name:"daniewcruz@gmail.com"},
+        {name:"Natal, RN"},
       ]
     },
 ]
