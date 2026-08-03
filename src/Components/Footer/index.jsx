@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 import { footer, socialHandles } from "../../sources";
 import { Link } from "react-scroll";

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Cube3D.css";
 
 const Cube3D = () => {

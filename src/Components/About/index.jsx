@@ -1,7 +1,5 @@
-import React from "react";
 import "./About.css";
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaNodeJs, FaReact, FaPython } from 'react-icons/fa';  // Importando ícones
-import Cube3D from "../Cube3D/Cube3D";
+
 const About = () => {
     return (
         <section id="about" className="about">

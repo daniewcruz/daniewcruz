@@ -1,4 +1,3 @@
-import React from "react";
 import "./Logo.css";
 import { FaLaptopCode } from "react-icons/fa6";
 

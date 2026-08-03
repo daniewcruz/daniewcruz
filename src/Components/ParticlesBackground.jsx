@@ -1,4 +1,3 @@
-import React from "react";
 import { Particles } from "@tsparticles/react";
 
 const ParticlesBackground = () => {

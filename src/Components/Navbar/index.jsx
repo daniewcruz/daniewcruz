@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import {tabs} from "../../sources";
 import { Link} from "react-scroll"
