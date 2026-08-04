@@ -4,8 +4,8 @@ import "./Skill.css";
 import { skills } from "../../sources";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
-// Seção de skills, organizadas por categoria. As barras de progresso enchem/esvaziam
-// via anime.js (não CSS), disparadas pelos callbacks onEnter/onExit do reveal de scroll.
+// Seção de skills, organizadas por categoria. As barras de progresso enchem
+// via anime.js (não CSS), disparadas pelo callback onEnter do reveal de scroll.
 const Skill = () => {
     // Map (não array) porque a ref-callback do React roda fora de ordem entre
     // categorias; a chave "categoria-item" garante que cada barra é registrada uma vez.
@@ -29,16 +29,6 @@ const Skill = () => {
                     duration: 900,
                     delay: 300 + index * 45,
                     ease: "outQuad",
-                });
-            });
-        },
-        // Esvaziar de volta ao rolar pra cima e sair da seção, pra poder encher de novo (replay)
-        onExit: () => {
-            Array.from(barRefs.current.values()).forEach((bar) => {
-                animate(bar, {
-                    width: "0%",
-                    duration: 400,
-                    ease: "inQuad",
                 });
             });
         },
