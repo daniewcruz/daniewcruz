@@ -8,6 +8,12 @@
     align-items: start;
 }
 
+.experience-list-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .experience-card,
 .education-card {
     background: var(--bg-secondary);
@@ -43,6 +49,11 @@
 .experience-period {
     white-space: nowrap;
     font-size: 14px;
+}
+
+.experience-location {
+    font-size: 13px;
+    margin-bottom: 6px;
 }
 
 .experience-focus {

@@ -24,21 +24,45 @@ export const tabs = [
     {name:"Contato",id:'contact'},
 ]
 
-// Experiência profissional exibida na seção Experiência (um único cargo, por enquanto)
-export const experience = {
-  title: "Desenvolvedor",
-  company: "Gentil Negócios",
-  period: "jun/2025 — nov/2025",
-  focus: "Engenharia de Dados & Automação Empresarial",
-  items: [
-    "Airflow: orquestração de pipelines ETL, integração SAP",
-    "RPA: automação com Python e SAP Script",
-    "n8n: desenvolvimento de fluxos de automação",
-    "Zeev: modelagem BPMN, automações low-code",
-    "Integrações: APIs REST, sincronização entre sistemas",
-    "Trabalho em equipe: Scrum, Kanban",
-  ],
+type ExperienceItem = {
+  title: string;
+  company: string;
+  period: string;
+  location?: string;
+  focus: string;
+  items: string[];
 }
+
+// Experiências profissionais exibidas na seção Experiência, mais recente primeiro
+export const experiences: ExperienceItem[] = [
+  {
+    title: "Desenvolvedor Full Stack",
+    company: "Dat4force · Freelance",
+    period: "jan/2025 — atual",
+    location: "Natal, Rio Grande do Norte · Híbrido",
+    focus: "Automação de processos empresariais com Python e ODOO",
+    items: [
+      "Desenvolvimento de sistemas e soluções para automação de processos, usando Python e banco de dados como base tecnológica",
+      "Criação e integração de módulos personalizados na plataforma ODOO, com foco em eficiência operacional e escalabilidade",
+      "Modelagem de dados, regras de negócio e painéis visuais/operacionais para análise e tomada de decisão",
+      "Implantação de sistemas de governança fiscal e logística, com conformidade tributária e rastreabilidade",
+    ],
+  },
+  {
+    title: "Desenvolvedor",
+    company: "Gentil Negócios",
+    period: "jun/2025 — nov/2025",
+    focus: "Engenharia de Dados & Automação Empresarial",
+    items: [
+      "Airflow: orquestração de pipelines ETL, integração SAP",
+      "RPA: automação com Python e SAP Script",
+      "n8n: desenvolvimento de fluxos de automação",
+      "Zeev: modelagem BPMN, automações low-code",
+      "Integrações: APIs REST, sincronização entre sistemas",
+      "Trabalho em equipe: Scrum, Kanban",
+    ],
+  },
+]
 
 // Formação acadêmica, listada na mesma seção Experiência
 export const education = [

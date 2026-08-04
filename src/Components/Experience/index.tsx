@@ -1,8 +1,8 @@
 import "./Experience.css";
-import { experience, education } from "../../sources";
+import { experiences, education } from "../../sources";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
-// Seção de trajetória: card de experiência profissional + card de formação acadêmica.
+// Seção de trajetória: lista de experiências profissionais + card de formação acadêmica.
 const Experience = () => {
     const sectionRef = useScrollReveal<HTMLElement>({ childSelector: ".experience-card, .education-card" });
 
@@ -18,20 +18,27 @@ const Experience = () => {
                     </p>
                 </div>
                 <div className="experience-container">
-                    <div className="experience-card">
-                        <div className="experience-card-header">
-                            <div>
-                                <h3 className="experience-role">{experience.title}</h3>
-                                <p className="experience-company">{experience.company}</p>
+                    <div className="experience-list-column">
+                        {experiences.map((job, index) => (
+                            <div className="experience-card" key={index}>
+                                <div className="experience-card-header">
+                                    <div>
+                                        <h3 className="experience-role">{job.title}</h3>
+                                        <p className="experience-company">{job.company}</p>
+                                    </div>
+                                    <span className="muted experience-period">{job.period}</span>
+                                </div>
+                                {job.location && (
+                                    <p className="muted experience-location">{job.location}</p>
+                                )}
+                                <p className="muted experience-focus">{job.focus}</p>
+                                <ul className="experience-list">
+                                    {job.items.map((item, itemIndex) => (
+                                        <li key={itemIndex}>{item}</li>
+                                    ))}
+                                </ul>
                             </div>
-                            <span className="muted experience-period">{experience.period}</span>
-                        </div>
-                        <p className="muted experience-focus">{experience.focus}</p>
-                        <ul className="experience-list">
-                            {experience.items.map((item, index) => (
-                                <li key={index}>{item}</li>
-                            ))}
-                        </ul>
+                        ))}
                     </div>
                     <div className="education-card">
                         <h3 className="experience-role">Formação</h3>
