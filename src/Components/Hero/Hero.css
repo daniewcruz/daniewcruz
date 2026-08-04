@@ -5,11 +5,13 @@
 
 .hero-image img {
     width: 75%; /* ou o tamanho desejado */
-    height: auto; /* ou ajuste o valor de altura */
-    object-fit: contain; /* Isso evita que a imagem seja cortada */
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     display: block;
     margin: 0 auto;
-    
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 0 8px color-mix(in srgb, var(--primary) 15%, transparent);
 }
 
 :root {
@@ -84,12 +86,9 @@
 #hero .info-container{
     display: grid;
     grid-template-columns: auto 500px;
+    align-items: center;
     gap: 20px;
-    min-height: 100vh;
-}
-
-#hero .info-container .column:nth-child(1){
-    padding-top: 70px;
+    padding: 70px 0;
 }
 
 #hero .heading-1,
