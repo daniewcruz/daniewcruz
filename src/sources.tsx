@@ -6,19 +6,61 @@ import { RiExchange2Fill } from "react-icons/ri";
 import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp} from "react-icons/fa6";
 import { FaPaintBrush } from "react-icons/fa";
 import {DiReact, DiPython} from "react-icons/di";
-import {SiMongodb, SiPostgresql, SiOdoo} from "react-icons/si";
+import {SiMongodb, SiPostgresql, SiOdoo, SiBehance, SiReactquery} from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
 import { TbBrandReactNative } from "react-icons/tb";
 import { BiLogoDocker } from "react-icons/bi";
 
+// Dados de conteúdo do site: tudo que aparece nas seções vem daqui, para manter
+// os componentes (src/Components/**) só com a estrutura visual.
+
+// Itens da navbar/menu mobile — o `id` precisa bater com o `id` da <section> correspondente
 export const tabs = [
     {name:"Sobre",id:'about'},
+    {name:"Experiência",id:'experience'},
     {name:"Skills",id:'skill'},
     {name:"Serviços",id:'services'},
     {name:"Projetos",id:'projects'},
     {name:"Contato",id:'contact'},
 ]
 
+// Experiência profissional exibida na seção Experiência (um único cargo, por enquanto)
+export const experience = {
+  title: "Desenvolvedor",
+  company: "Gentil Negócios",
+  period: "jun/2025 — nov/2025",
+  focus: "Engenharia de Dados & Automação Empresarial",
+  items: [
+    "Airflow: orquestração de pipelines ETL, integração SAP",
+    "RPA: automação com Python e SAP Script",
+    "n8n: desenvolvimento de fluxos de automação",
+    "Zeev: modelagem BPMN, automações low-code",
+    "Integrações: APIs REST, sincronização entre sistemas",
+    "Trabalho em equipe: Scrum, Kanban",
+  ],
+}
+
+// Formação acadêmica, listada na mesma seção Experiência
+export const education = [
+  {
+    course: "Técnico em Desenvolvimento de Sistemas",
+    institution: "SENAC RN",
+    period: "2023 — 2025",
+  },
+  {
+    course: "Desenvolvedor Full Stack",
+    institution: "Vai na Web (234h)",
+    period: "",
+  },
+  {
+    course: "Fundamentos de Design Web",
+    institution: "SENAC EAD",
+    period: "",
+  },
+]
+
+// Não renderizado em nenhuma seção atualmente — mantido pra um possível bloco
+// de "diferenciais" futuro; se não for usado, é candidato a remoção.
 export const whyChooseMe = [
   {
     title:"4 Sistemas em Produção",
@@ -41,6 +83,7 @@ export const whyChooseMe = [
     link:"",
   },
 ]
+// Serviços oferecidos, exibidos como cards na seção Serviços
 export const services = [
   {
     name:"Desenvolvimento Mobile Offline-First",
@@ -65,6 +108,8 @@ export const services = [
 ]
 
 
+// Skills agrupadas por categoria; `level` só aceita "Experienced" | "Intermediate"
+// (ver Skill/index.tsx, que mapeia isso pra 90%/65% de largura na barra)
 export const skills = [
   {
       title:"Design & Prototipagem",
@@ -121,7 +166,7 @@ export const skills = [
       ]
   },
   {
-      title:"Backend & ODOO",
+      title:"Backend & Integrações",
       items:[
           {
               skill:"ODOO",
@@ -136,6 +181,10 @@ export const skills = [
               level:"Intermediate",
           },
           {
+              skill:"Express.js",
+              level:"Intermediate",
+          },
+          {
               skill:"Airflow",
               level:"Intermediate",
           },
@@ -144,17 +193,21 @@ export const skills = [
               level:"Intermediate",
           },
           {
-              skill:"APIs REST",
-              level:"Experienced",
-          },
-          {
               skill:"n8n",
               level:"Intermediate",
+          },
+          {
+              skill:"Zeev",
+              level:"Intermediate",
+          },
+          {
+              skill:"APIs REST",
+              level:"Experienced",
           },
       ]
   },
   {
-      title:"Banco de Dados & DevOps",
+      title:"Banco de Dados & Ferramentas",
       items:[
           {
               skill:"PostgreSQL",
@@ -173,10 +226,6 @@ export const skills = [
               level:"Experienced",
           },
           {
-              skill:"Firebase",
-              level:"Intermediate",
-          },
-          {
               skill:"Scrum",
               level:"Experienced",
           },
@@ -189,6 +238,8 @@ export const skills = [
 ]
 
 
+// Projetos exibidos na seção Projetos. `image` usa URLs do Unsplash (placeholder);
+// `demoLink` aponta pra loja/repositório/Behance conforme o tipo de projeto.
 export const projects = [
   {
     id:1,
@@ -247,6 +298,11 @@ export const projects = [
         name:"Odoo",
         icon: <SiOdoo/>,
         iconColor:"darkred",
+      },
+      {
+        name:"React Query",
+        icon: <SiReactquery/>,
+        iconColor:"red",
       },
     ]
   },
@@ -320,8 +376,24 @@ export const projects = [
       },
     ]
   },
+  {
+    id:5,
+    title: 'Aluguel de Vestidos',
+    image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=500&h=300&fit=crop',
+    category:"Design",
+    description: `Design completo de aplicativo para aluguel de vestidos, do zero à interface final. Foco em experiência fluida, navegação intuitiva e identidade visual alinhada com a marca.`,
+    demoLink: "https://www.behance.net/daniewcruz",
+    stack:[
+      {
+        name:"Figma",
+        icon: <CgFigma/>,
+        iconColor:"orangered",
+      },
+    ]
+  },
 ]
 
+// Dados de contato direto, exibidos como lista na seção Contato
 export const contactOptions = [
   {
     title:"Email",
@@ -340,6 +412,7 @@ export const contactOptions = [
   },
 ]
 
+// Redes sociais/perfis — usadas na Navbar, Footer e seção Contato (mesma lista nos três lugares)
 export const socialHandles = [
     {
       name:"Linkedin",
@@ -350,6 +423,11 @@ export const socialHandles = [
       name:"Github",
       icon:<FaGithub />,
       link:"https://github.com/daniewcruz",
+    },
+    {
+      name:"Behance",
+      icon:<SiBehance />,
+      link:"https://www.behance.net/daniewcruz",
     },
     {
       name:"Instagram",
@@ -363,16 +441,19 @@ export const socialHandles = [
     },
 ];
 
+// `id` presente = vira link de scroll pra seção; ausente = só texto (ex.: email no rodapé)
 type FooterRoute = {
   name: string;
   id?: string;
 }
 
+// Colunas de navegação do rodapé
 export const footer: { title: string; routes: FooterRoute[] }[] = [
   {
     title:"Navegação",
     routes:[
       {name:"Sobre",id:'about'},
+      {name:"Experiência",id:'experience'},
       {name:"Skills",id:'skill'},
     ]
   },
