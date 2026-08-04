@@ -1,0 +1,31 @@
+/* Posição (translateX/Y) é controlada via JS (gsap.quickTo em index.tsx); aqui só
+   o visual estático. pointer-events:none garante que o cursor não bloqueia cliques. */
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--primary);
+}
+
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--primary);
+  transition: width 0.25s ease, height 0.25s ease, background-color 0.25s ease;
+}
+
+.cursor-ring--active {
+  width: 56px;
+  height: 56px;
+  background: color-mix(in srgb, var(--primary) 15%, transparent);
+}

@@ -1,3 +1,5 @@
+/* Grade de cards de projeto: spotlight + tilt 3D via CSS custom properties (ver useTilt3D/useSpotlight) */
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -6,16 +8,40 @@
 }
 
 .project-card {
+    position: relative;
     background: var(--bg-secondary);
     border: 1px solid var(--border-primary);
     border-radius: 16px;
     overflow: hidden;
-    transition: var(--transition);
+    transition: border-color 400ms ease;
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
     border-color: var(--primary);
+}
+
+/* Brilho que acompanha o cursor (posição via --spot-x/--spot-y, setadas em useSpotlight) */
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(circle at var(--spot-x, 50%) var(--spot-y, 50%), color-mix(in srgb, var(--primary) 20%, transparent), transparent 60%);
+    opacity: 0;
+    transition: opacity 300ms ease;
+    pointer-events: none;
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+/* Tilt 3D: --tilt-x/--tilt-y/--tilt-scale são setadas via JS (useTilt3D) conforme o mouse se move sobre o card */
+.project-card-inner {
+    position: relative;
+    z-index: 1;
+    transform: perspective(700px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) scale(var(--tilt-scale, 1));
+    transition: transform 0.4s ease;
 }
 
 .project-image {

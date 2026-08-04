@@ -1,8 +1,7 @@
+/* Estilos globais: fontes, tokens de cor/gradiente (:root), reset e classes utilitárias
+   reaproveitadas por todas as seções (.wrapper, .btn, .icon-wrapper, .gradient-text etc.) */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600;700&display=swap');
-
-
-
 
 :root{
   --bg-primary: #070d06;
@@ -33,6 +32,13 @@
   border: 0;
   outline: 0;
 }
+/* Cursor customizado (CustomCursor) substitui o do sistema; !important necessário
+   pois vários elementos definem cursor: pointer com maior especificidade */
+body.custom-cursor-active,
+body.custom-cursor-active * {
+  cursor: none !important;
+}
+
 html,body{
   color: var(--foreground);
   min-height: 100vh;/* altura da janela de visualização */
@@ -128,10 +134,11 @@ img{
   transition: var(--transition);
 }
 
+/* Sem transform:scale aqui de propósito — o hover de escala/rotação é aplicado
+   via JS (useMagneticHover, em App.tsx) pra ter uma curva de animação mais expressiva */
 .icon-wrapper:hover{
   background: var(--primary);
   color: var(--foreground);
-  transform: scale(1.1);
 }
 
 .btn{

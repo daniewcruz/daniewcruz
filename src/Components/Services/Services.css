@@ -1,3 +1,5 @@
+/* Cards de serviço: hover simples em CSS (sem tilt 3D via JS, diferente dos cards de projeto) */
+
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -6,6 +8,8 @@
 }
 
 .service-card {
+    position: relative;
+    overflow: hidden;
     background: var(--bg-secondary);
     border: 1px solid var(--border-primary);
     border-radius: 16px;
@@ -16,6 +20,27 @@
 .service-card:hover {
     transform: translateY(-6px);
     border-color: var(--primary);
+}
+
+/* Brilho que acompanha o cursor (posição via --spot-x/--spot-y, setadas em useSpotlight) */
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(circle at var(--spot-x, 50%) var(--spot-y, 50%), color-mix(in srgb, var(--primary) 20%, transparent), transparent 60%);
+    opacity: 0;
+    transition: opacity 300ms ease;
+    pointer-events: none;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-card > * {
+    position: relative;
+    z-index: 1;
 }
 
 .service-icon {
