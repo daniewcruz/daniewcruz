@@ -65,7 +65,8 @@ const Hero = () => {
             Bem-vindo! Eu sou <span style={{ color: "var(--primary)" }}><b>Daniew Cruz.</b></span>
           </h3>
           <h1 className="heading-1" ref={headingRef}>
-            Desenvolvedor <span className="gradient-text">Full Stack & Mobile</span>
+            Desenvolvedor<br />
+            <span className="gradient-text">Full Stack & Mobile</span>
           </h1>
           <p className="muted" ref={paragraphRef}>
             React Native · ODOO · UI/UX Design · Automação Empresarial. Transformo ideias em soluções digitais completas — do design no Figma à implementação técnica, com foco em resultados reais para o negócio.
