@@ -2,8 +2,9 @@ import "./Services.css";
 import { services } from "../../sources";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
+// Grade de serviços oferecidos, com spotlight no hover (mesmo padrão dos cards de projeto).
 const Services = () => {
-    const sectionRef = useScrollReveal<HTMLElement>();
+    const sectionRef = useScrollReveal<HTMLElement>({ childSelector: ".service-card" });
 
     return (
         <section id="services" className="services" ref={sectionRef}>

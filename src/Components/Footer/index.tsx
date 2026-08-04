@@ -2,10 +2,15 @@ import "./Footer.css";
 import { footer, socialHandles } from "../../sources";
 import { Link } from "react-scroll";
 import Logo from "../../Commons/Logo";
+import { useScrollReveal } from "../../hooks/useScrollReveal";
 
+// Rodapé: marca + redes sociais, colunas de navegação (geradas a partir de `footer` em sources)
+// e o aviso de direitos autorais com o ano atual calculado em tempo de execução.
 const Footer = () => {
+    const footerRef = useScrollReveal<HTMLElement>({ childSelector: ".footer-brand, .footer-column", y: 30 });
+
     return (
-        <footer className="footer">
+        <footer className="footer" ref={footerRef}>
             <div className="wrapper footer-container">
                 <div className="footer-brand">
                     <Logo />
@@ -33,9 +38,10 @@ const Footer = () => {
                         <div className="footer-column" key={index}>
                             <h4 className="footer-column-title">{column.title}</h4>
                             <div className="footer-routes">
+                                {/* Rotas com `id` viram links de scroll; as sem `id` (ex.: email, localização) são só texto */}
                                 {column.routes.map((route, routeIndex) =>
                                     route.id ? (
-                                        <Link to={route.id} smooth={true} spy={true} key={routeIndex} className="footer-route">
+                                        <Link to={route.id} smooth={true} spy={true} offset={-90} key={routeIndex} className="footer-route">
                                             {route.name}
                                         </Link>
                                     ) : (

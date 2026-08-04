@@ -4,7 +4,11 @@ import "./Skill.css";
 import { skills } from "../../sources";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
+// Seção de skills, organizadas por categoria. As barras de progresso enchem/esvaziam
+// via anime.js (não CSS), disparadas pelos callbacks onEnter/onExit do reveal de scroll.
 const Skill = () => {
+    // Map (não array) porque a ref-callback do React roda fora de ordem entre
+    // categorias; a chave "categoria-item" garante que cada barra é registrada uma vez.
     const barRefs = useRef(new Map<string, HTMLDivElement>());
 
     const registerBar = (key: string) => (el: HTMLDivElement | null) => {
@@ -15,15 +19,29 @@ const Skill = () => {
         }
     };
 
-    const sectionRef = useScrollReveal<HTMLElement>(() => {
-        Array.from(barRefs.current.values()).forEach((bar, index) => {
-            animate(bar, {
-                width: bar.dataset.targetWidth ?? "0%",
-                duration: 900,
-                delay: index * 60,
-                ease: "outQuad",
+    const sectionRef = useScrollReveal<HTMLElement>({
+        childSelector: ".skill-category",
+        // Encher as barras com leve atraso e cascata, depois que as categorias já revelaram
+        onEnter: () => {
+            Array.from(barRefs.current.values()).forEach((bar, index) => {
+                animate(bar, {
+                    width: bar.dataset.targetWidth ?? "0%",
+                    duration: 900,
+                    delay: 300 + index * 45,
+                    ease: "outQuad",
+                });
             });
-        });
+        },
+        // Esvaziar de volta ao rolar pra cima e sair da seção, pra poder encher de novo (replay)
+        onExit: () => {
+            Array.from(barRefs.current.values()).forEach((bar) => {
+                animate(bar, {
+                    width: "0%",
+                    duration: 400,
+                    ease: "inQuad",
+                });
+            });
+        },
     });
 
     return (
@@ -52,6 +70,7 @@ const Skill = () => {
                                             <div
                                                 className="skill-bar-fill"
                                                 ref={registerBar(`${index}-${itemIndex}`)}
+                                                // Lido pelo anime.js no onEnter acima; começa em 0 e anima até aqui
                                                 data-target-width={item.level === "Experienced" ? "90%" : "65%"}
                                                 style={{ width: 0 }}
                                             />

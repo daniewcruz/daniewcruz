@@ -2,8 +2,9 @@ import "./Contact.css";
 import { contactOptions, socialHandles } from "../../sources";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
+// Seção de contato: dados diretos (email/telefone/localização) + links de redes sociais.
 const Contact = () => {
-    const sectionRef = useScrollReveal<HTMLElement>();
+    const sectionRef = useScrollReveal<HTMLElement>({ childSelector: ".contact-option, .contact-socials" });
 
     return (
         <section id="contact" className="contact" ref={sectionRef}>
