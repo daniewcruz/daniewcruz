@@ -1,3 +1,5 @@
+/* Estilos da seção Hero: foto circular, onda decorativa e grid de texto+imagem */
+
 #hero{
     overflow: hidden;
     position: relative;
@@ -14,8 +16,10 @@
     box-shadow: 0 0 0 8px color-mix(in srgb, var(--primary) 15%, transparent);
 }
 
+/* Sobrescrita histórica de --primary: como index.css declara --primary por último
+   no bundle final, esse valor nunca chega a ser aplicado (a cor dourada global vence) */
 :root {
-    --primary: #4d74d4; /* Cor para a onda */
+    --primary: #4d74d4;
   }
   
   .hero {
@@ -78,7 +82,6 @@
 .btn:hover {
     background-color: var(--primary);
     color: white;
-    transform: scale(1.05);
 }
 
 
@@ -88,7 +91,8 @@
     grid-template-columns: auto 500px;
     align-items: center;
     gap: 20px;
-    padding: 70px 0;
+    /* padding-top maior que a altura da navbar fixa (~68px), pra não colar nela */
+    padding: 120px 0 70px;
 }
 
 #hero .heading-1,
