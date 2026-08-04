@@ -10,6 +10,7 @@ import {SiMongodb, SiPostgresql, SiOdoo, SiBehance, SiReactquery} from "react-ic
 import { CgFigma } from "react-icons/cg";
 import { TbBrandReactNative } from "react-icons/tb";
 import { BiLogoDocker } from "react-icons/bi";
+import estoquePlusLogoMockups from "./assets/projects/estoque-plus-logo-mockups.png";
 
 // Dados de conteúdo do site: tudo que aparece nas seções vem daqui, para manter
 // os componentes (src/Components/**) só com a estrutura visual.
@@ -271,7 +272,7 @@ export const projects = [
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
     category:"Mobile",
     description: `App de gamificação para aprendizes com usuários reais na Google Play Store. Responsável por design visual completo em Figma e implementação React Native. Foco em experiência interativa, engajamento e retenção de usuários através de desafios e rewards.`,
-    demoLink: "https://play.google.com/store/apps/details?id=com.alexdevmobile007.senacaprendizagem",
+    demoLink: "https://play.google.com/store/apps/details?id=com.alexdevmobile007.senacaprendizagem&hl=en_US",
     stack:[
       {
         name:"React Native",
@@ -336,7 +337,7 @@ export const projects = [
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop',
     category:"Web",
     description: `Portal de logística em produção que otimiza processos de agendamento entre compradores e fornecedores. Responsável por design visual e desenvolvimento backend ODOO em equipe usando Scrum. Integrações com sistemas de logística e gestão de entregas.`,
-    demoLink: "https://github.com/daniewcruz",
+    demoLink: "https://dat4force.com.br/leadtime",
     stack:[
       {
         name:"Figma",
@@ -371,7 +372,7 @@ export const projects = [
     image: 'https://images.unsplash.com/photo-1516321318423-f06f70e504c0?w=500&h=300&fit=crop',
     category:"Web",
     description: `Sistema ODOO de pré-entrada de notas em produção. Especializado em governança fiscal com análise automática de críticas (fiscais, comerciais, pricing) e detecção de inconsistências. Dashboard operacional para aprovação de notas com rastreamento completo. Desenvolvimento solo com customizações avançadas.`,
-    demoLink: "https://github.com/daniewcruz",
+    demoLink: "https://dat4force.com.br/nexped",
     stack:[
       {
         name:"Odoo",
@@ -402,11 +403,26 @@ export const projects = [
   },
   {
     id:5,
-    title: 'Aluguel de Vestidos',
+    title: 'Redesign — Sistema de Agendamento de Loja de Aluguel',
     image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=500&h=300&fit=crop',
     category:"Design",
-    description: `Design completo de aplicativo para aluguel de vestidos, do zero à interface final. Foco em experiência fluida, navegação intuitiva e identidade visual alinhada com a marca.`,
-    demoLink: "https://www.behance.net/daniewcruz",
+    description: `Reformulação de um sistema interno de uma loja de aluguel de vestidos e acessórios. Redefinição de paleta de cores, grids, ícones e feedback visual para resolver hierarquia visual confusa e layouts inconsistentes, entregando uma identidade mais moderna, acessível e usável.`,
+    demoLink: "https://www.behance.net/gallery/235943803/Redesign-Sistema-de-Agendamento-de-Loja-de-Aluguel",
+    stack:[
+      {
+        name:"Figma",
+        icon: <CgFigma/>,
+        iconColor:"orangered",
+      },
+    ]
+  },
+  {
+    id:6,
+    title: 'Estoque+ — Identidade Visual',
+    image: estoquePlusLogoMockups,
+    category:"Design",
+    description: `Proposta de logo para o aplicativo Estoque+, criada do zero para substituir símbolos de caixa genéricos por uma marca de fácil reconhecimento. A letra "E" representa Estoque, o sinal de "+" simboliza soluções e crescimento, e as linhas do ícone transmitem movimento e fluxo contínuo. Aplicada em ícone adaptativo, splash screen e tela de login.`,
+    demoLink: "/docs/estoque-plus-proposta-logo.pdf",
     stack:[
       {
         name:"Figma",
