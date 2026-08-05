@@ -11,6 +11,9 @@ import { CgFigma } from "react-icons/cg";
 import { TbBrandReactNative } from "react-icons/tb";
 import { BiLogoDocker } from "react-icons/bi";
 import estoquePlusLogoMockups from "./assets/projects/estoque-plus-logo-mockups.png";
+import leadtimeAppScreen from "./assets/projects/leadtime-app.jpg";
+import nexpedDashboard from "./assets/projects/nexped-dashboard.jpg";
+import redesignAgendamento from "./assets/projects/redesign-agendamento.jpg";
 
 // Dados de conteúdo do site: tudo que aparece nas seções vem daqui, para manter
 // os componentes (src/Components/**) só com a estrutura visual.
@@ -334,7 +337,7 @@ export const projects = [
   {
     id:3,
     title: 'LeadTime',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop',
+    image: leadtimeAppScreen,
     category:"Web",
     description: `Portal de logística em produção que otimiza processos de agendamento entre compradores e fornecedores. Responsável por design visual e desenvolvimento backend ODOO em equipe usando Scrum. Integrações com sistemas de logística e gestão de entregas.`,
     demoLink: "https://dat4force.com.br/leadtime",
@@ -369,7 +372,7 @@ export const projects = [
   {
     id:4,
     title: 'Nexped',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f70e504c0?w=500&h=300&fit=crop',
+    image: nexpedDashboard,
     category:"Web",
     description: `Sistema ODOO de pré-entrada de notas em produção. Especializado em governança fiscal com análise automática de críticas (fiscais, comerciais, pricing) e detecção de inconsistências. Dashboard operacional para aprovação de notas com rastreamento completo. Desenvolvimento solo com customizações avançadas.`,
     demoLink: "https://dat4force.com.br/nexped",
@@ -404,7 +407,7 @@ export const projects = [
   {
     id:5,
     title: 'Redesign — Sistema de Agendamento de Loja de Aluguel',
-    image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=500&h=300&fit=crop',
+    image: redesignAgendamento,
     category:"Design",
     description: `Reformulação de um sistema interno de uma loja de aluguel de vestidos e acessórios. Redefinição de paleta de cores, grids, ícones e feedback visual para resolver hierarquia visual confusa e layouts inconsistentes, entregando uma identidade mais moderna, acessível e usável.`,
     demoLink: "https://www.behance.net/gallery/235943803/Redesign-Sistema-de-Agendamento-de-Loja-de-Aluguel",
