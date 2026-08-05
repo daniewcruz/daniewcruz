@@ -14,6 +14,8 @@ import estoquePlusLogoMockups from "./assets/projects/estoque-plus-logo-mockups.
 import leadtimeAppScreen from "./assets/projects/leadtime-app.jpg";
 import nexpedDashboard from "./assets/projects/nexped-dashboard.jpg";
 import redesignAgendamento from "./assets/projects/redesign-agendamento.jpg";
+import conectaAprendizApp from "./assets/projects/conecta-aprendiz-app.jpg";
+import estoquePlusApp from "./assets/projects/estoque-plus-app.jpg";
 
 // Dados de conteúdo do site: tudo que aparece nas seções vem daqui, para manter
 // os componentes (src/Components/**) só com a estrutura visual.
@@ -272,7 +274,7 @@ export const projects = [
   {
     id:1,
     title: 'Conecta Aprendiz',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
+    image: conectaAprendizApp,
     category:"Mobile",
     description: `App de gamificação para aprendizes com usuários reais na Google Play Store. Responsável por design visual completo em Figma e implementação React Native. Foco em experiência interativa, engajamento e retenção de usuários através de desafios e rewards.`,
     demoLink: "https://play.google.com/store/apps/details?id=com.alexdevmobile007.senacaprendizagem&hl=en_US",
@@ -297,7 +299,7 @@ export const projects = [
   {
     id:2,
     title: 'Estoque+',
-    image: 'https://images.unsplash.com/photo-1553531088-a93c38a47b68?w=500&h=300&fit=crop',
+    image: estoquePlusApp,
     category:"Mobile",
     description:`App mobile logístico em produção com múltiplas lojas. Módulos offline-first para Recebimento, Conferência e Transferência. Sincronização automática com retry, histórico imutável e rastreamento completo. Integração com scanner de barcode, câmera para ocorrências e rotas.`,
     demoLink: "https://github.com/daniewcruz",
