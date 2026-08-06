@@ -59,3 +59,67 @@
 .contact-form-status.error {
     color: var(--warning);
 }
+
+/* Estado de sucesso: substitui o form por uma confirmação animada
+   (círculo + check "desenhados" via stroke-dasharray), em vez de um
+   texto de alerta genérico. */
+.contact-form-success {
+    align-items: center;
+    text-align: center;
+    padding: 46px 30px;
+    animation: contact-success-in 500ms ease both;
+}
+
+.contact-form-success h3 {
+    font-size: 22px;
+    margin-top: 4px;
+}
+
+.contact-form-success p {
+    max-width: 320px;
+}
+
+.success-check {
+    overflow: visible;
+}
+
+.success-check-circle {
+    stroke: var(--primary);
+    stroke-dasharray: 182;
+    stroke-dashoffset: 182;
+    animation: success-draw-circle 550ms cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.success-check-mark {
+    stroke: var(--primary);
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    animation: success-draw-mark 350ms ease-out 500ms forwards;
+}
+
+.contact-form-reset {
+    margin-top: 8px;
+}
+
+@keyframes contact-success-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes success-draw-circle {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes success-draw-mark {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

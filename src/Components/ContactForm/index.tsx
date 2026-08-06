@@ -33,6 +33,22 @@ const ContactForm = () => {
         }
     };
 
+    if (status === "success") {
+        return (
+            <div className="contact-form-card contact-form-success">
+                <svg className="success-check" viewBox="0 0 64 64" width="56" height="56">
+                    <circle className="success-check-circle" cx="32" cy="32" r="29" fill="none" strokeWidth="3" />
+                    <path className="success-check-mark" fill="none" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" d="M19 33.5L28 42L45 23" />
+                </svg>
+                <h3>Mensagem enviada</h3>
+                <p className="muted">Recebi o que você escreveu e retorno o mais rápido possível.</p>
+                <button type="button" className="btn contact-form-reset" onClick={() => setStatus("idle")}>
+                    Enviar outra mensagem
+                </button>
+            </div>
+        );
+    }
+
     return (
         <form className="contact-form-card" onSubmit={handleSubmit}>
             <div className="contact-form-field">
@@ -50,9 +66,6 @@ const ContactForm = () => {
             <button type="submit" className="btn primary contact-form-submit" disabled={status === "sending"}>
                 {status === "sending" ? "Enviando..." : "Enviar mensagem"}
             </button>
-            {status === "success" && (
-                <p className="contact-form-status success">Mensagem enviada! Retorno o mais rápido possível.</p>
-            )}
             {status === "error" && (
                 <p className="contact-form-status error">
                     Não consegui enviar agora. Tente de novo ou me chame direto no WhatsApp/email.
