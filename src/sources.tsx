@@ -438,6 +438,10 @@ export const projects = [
   },
 ]
 
+// Endpoint do Formspree (formulário de contato) — trocar pelo ID real gerado
+// em formspree.io/forms antes do formulário funcionar de verdade.
+export const FORMSPREE_ENDPOINT = "https://formspree.io/f/SEU_ID_AQUI";
+
 // Dados de contato direto, exibidos como lista na seção Contato
 export const contactOptions = [
   {
