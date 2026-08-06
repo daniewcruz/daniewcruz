@@ -73,7 +73,7 @@ const Hero = () => {
           </p>
           <div className="flex-center buttons-wrapper" ref={buttonsRef}>
             <Link to="services" smooth={true} spy={true} offset={-90} className="btn primary">Ver Projetos</Link>
-            <Link to="contact" smooth={true} spy={true} offset={-90} className="btn">Baixar CV</Link>
+            <a href="/docs/curriculo-daniel-lucas.pdf" download="Curriculo_Daniel_Lucas_da_Silva_Cruz.pdf" className="btn">Baixar CV</a>
           </div>
         </div>
         <div className="column hero-image" ref={imageColumnRef}>
