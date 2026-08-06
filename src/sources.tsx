@@ -3,7 +3,7 @@ import { IoCallOutline ,IoLocationOutline } from "react-icons/io5";
 import { GrUserExpert } from "react-icons/gr";
 import { MdOutlineSupportAgent,MdOutlineAlternateEmail } from "react-icons/md";
 import { RiExchange2Fill } from "react-icons/ri";
-import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp} from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaWhatsapp} from "react-icons/fa6";
 import { FaPaintBrush } from "react-icons/fa";
 import {DiReact, DiPython} from "react-icons/di";
 import {SiMongodb, SiPostgresql, SiOdoo, SiBehance, SiReactquery} from "react-icons/si";
@@ -475,14 +475,9 @@ export const socialHandles = [
       link:"https://www.behance.net/daniewcruz",
     },
     {
-      name:"Instagram",
-      icon:<FaInstagram />,
-      link:"https://www.instagram.com/daniewcruz",
-    },
-    {
       name: "Whatsapp",
       icon: <FaWhatsapp />,
-      link: "https://wa.me/5584994553966",
+      link: "https://wa.me/daniewcruz",
     },
 ];
 
