@@ -26,7 +26,11 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="contact-option-title muted">{option.title}</h4>
-                                    <p>{option.value}</p>
+                                    {option.link ? (
+                                        <a href={option.link}>{option.value}</a>
+                                    ) : (
+                                        <p>{option.value}</p>
+                                    )}
                                 </div>
                             </div>
                         ))}

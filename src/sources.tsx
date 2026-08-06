@@ -1,5 +1,5 @@
 import { IoMdAnalytics} from "react-icons/io";
-import { IoCallOutline ,IoLocationOutline } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
 import { GrUserExpert } from "react-icons/gr";
 import { MdOutlineSupportAgent,MdOutlineAlternateEmail } from "react-icons/md";
 import { RiExchange2Fill } from "react-icons/ri";
@@ -443,12 +443,8 @@ export const contactOptions = [
   {
     title:"Email",
     value:"daniewcruz@gmail.com",
+    link:"mailto:daniewcruz@gmail.com",
     icon:<MdOutlineAlternateEmail />,
-  },
-  {
-    title:"Telefone",
-    value:"+55 84 99455-3966",
-    icon:<IoCallOutline/>,
   },
   {
     title:"Localização",
@@ -477,7 +473,7 @@ export const socialHandles = [
     {
       name: "Whatsapp",
       icon: <FaWhatsapp />,
-      link: "https://wa.me/daniewcruz",
+      link: "https://wa.me/558491357509",
     },
 ];
 
